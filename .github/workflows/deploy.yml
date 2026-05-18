@@ -19,7 +19,13 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
 
           script: |
-            cd node-deployment-learning
+            cd ~/node-deployment-learning
+
+            pwd
+            ls
+
+            docker --version
+            docker compose version
 
             git pull origin master
 
